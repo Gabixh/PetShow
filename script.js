@@ -10,7 +10,6 @@ form.addEventListener('submit', function (e) {
     const nomeDono = document.getElementById('Owner').value;
     const telefone = document.getElementById('Phone').value;
 
-    // Criar a tabela caso seja o primeiro cadastro
     if (tabelaOutput.querySelector('table') === null) {
         tabelaOutput.innerHTML = `
             <table>
@@ -31,8 +30,7 @@ form.addEventListener('submit', function (e) {
     }
 
     const tabelaBody = tabelaOutput.querySelector('tbody');
-
-    // Criar linha na tabela
+    
     const linha = document.createElement('tr');
     linha.innerHTML = `
         <td>${id++}</td>
@@ -45,11 +43,9 @@ form.addEventListener('submit', function (e) {
 
     tabelaBody.appendChild(linha);
 
-    // Adicionar funcionalidade de exclusão
     linha.querySelector('.delete-btn').addEventListener('click', function () {
         linha.remove();
 
-        // Remover a tabela se ficar vazia
         if (tabelaBody.children.length === 0) {
             tabelaOutput.innerHTML = `
                 <p id="table">
@@ -59,7 +55,6 @@ form.addEventListener('submit', function (e) {
         }
     });
 
-    // Resetar formulário
     form.reset();
 });
 
