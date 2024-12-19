@@ -1,0 +1,126 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Arial', sans-serif;
+    background-color: #f3e5f5; 
+    color: #444; 
+}
+
+
+#topo {
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    background: linear-gradient(90deg, #8e24aa, #d81b60); 
+    color: white;
+    text-align: center;
+    border-bottom: 4px solid #6a1b9a; 
+}
+
+#topo img {
+    height: 80px;
+    margin-right: 20px;
+}
+
+#topo h1 {
+    font-size: 48px;
+    margin: 0;
+    text-shadow: 2px 2px #6a1b9a; 
+}
+
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    height: 750px;
+    margin: 20px;
+}
+
+/* Formulário */
+#insert {
+    width: 48%;
+    background-color: #f8bbd0; 
+    border: 2px solid #ec407a; 
+    border-radius: 25px;
+    padding: 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#insert h1 {
+    text-align: center;
+    font-size: 26px;
+    color: #8e24aa; 
+    margin-bottom: 25px;
+}
+
+#insert label {
+    font-size: 16px;
+    color: #6a1b9a; 
+    margin-top: 10px;
+    display: block;
+    font-weight: bold;
+}
+
+#insert input {
+    height: 40px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 2px solid #ba68c8; 
+    width: 100%;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+    background-color: #f3e5f5; 
+    color: #6a1b9a;
+}
+
+#insert input:focus {
+    outline: none;
+    border-color: #8e24aa; 
+}
+
+#insert button {
+    height: 50px;
+    width: 100%;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #8e24aa, #d81b60); 
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+#insert button:hover {
+    background: linear-gradient(90deg, #6a1b9a, #c2185b); 
+}
+
+#output {
+    width: 48%;
+    background-color: #ede7f6;
+    border: 2px solid #ab47bc; 
+    border-radius: 25px;
+    padding: 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#output h1 {
+    font-size: 24px;
+    color: #8e24aa;
+    margin-bottom: 20px;
+}
+
+#output p {
+    font-size: 16px;
+    color: #444;
+    text-align: center;
+    background-color: #f3e5f5;
+    padding: 15px;
+    border-radius: 15px;
+    border: 1px solid #ba68c8;
+}

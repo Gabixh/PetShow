@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <title>PetChopp</title>
+</head>
+<body>
+    <div id="topo">
+        <img src="images.png" alt="Logo PetChopp">
+        <h1>PetShow De Patas</h1>
+    </div>
+
+    <div class="nav">
+        <div id="insert">
+            <form action="">
+                <h1>agendamento </h1>
+                <label for="PetName">Nome do Pet</label>
+                <input type="text" id="PetName" placeholder="Ex: Kiara Maria">
+                <label for="PetRace">Raça</label>
+                <input type="text" id="PetRace" placeholder="Ex: PitBull">
+                <label for="Owner">Nome do Dono</label>
+                <input type="text" id="Owner" placeholder="Seu nome">
+                <label for="Phone">Telefone</label>
+                <input type="number" id="Phone" placeholder="(xx) xxxxx-xxxx">
+                <button id="Send" type="submit">Agendar</button>
+            </form>
+        </div>
+
+        <div id="output">
+            <h1>Agendamentos Recentes</h1>
+            <p id="table">
+                Nenhum agendamento encontrado. Preencha o formulário ao lado para criar um!
+            </p>
+        </div>
+    </div>  
+
+    <script src="script.js"></script>
+</body>
+</html>
